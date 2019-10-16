@@ -1,0 +1,29 @@
+html {
+    box-sizing:border-box;
+}
+*, *::before, *::after {box-sizing:inherit;}
+
+.calculator { 
+    width:600px;
+    height:400px;
+    margin:auto;
+    background: rgba(120,176,97);
+}
+
+button {
+    background: rgba(145,191,127);
+    height:80px;
+    width:250px;
+    margin:20px;
+    font-size:30px;
+}
+
+input {
+    background: rgba(120,176,97);
+    height:80px;
+    width:600px;
+    text-align:right;
+    font-size:20px;
+    color:white;
+}
+
