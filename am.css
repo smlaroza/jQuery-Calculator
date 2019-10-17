@@ -1,0 +1,58 @@
+html {
+    box-sizing:border-box;
+}
+*, *::before, *::after {box-sizing:inherit;}
+
+.vrbls {
+    display:grid;
+    justify-content:center;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-areas: "c result result result";
+}
+
+button {
+    background: rgba(120,176,97);
+    border:1px solid rgba(139,189,120);
+    color: white;
+    font-size:25px;
+    font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    transition: width 2s, height 2s, transform 2s;
+    width:100px;
+    height:100px;
+
+}
+
+.symb {
+    background: rgba(145,191,127);
+    color:black;
+    font-size:30px;
+    border:1px solid rgba(139,189,120);
+    font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    transition: width 2s, height 2s, transform 2s;
+    width:100px;
+    height:100px;
+}
+
+#result {
+    border: 1px solid white;
+    grid-area:result;
+    background:  rgba(120,176,97);
+    color:white;
+    border:1px solid rgba(139,189,120);
+
+}
+
+.symb:hover {
+    width:100px;
+    height:100px;
+    transform:rotate(180deg);
+}
+
+button:hover {
+    width:100px;
+    height:100px;
+    transform:rotate(180deg);
+}
